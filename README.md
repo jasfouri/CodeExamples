@@ -29,7 +29,7 @@ Figure 1 plots the hysteresis loops colored by period of the magnetic field for 
 ![HysteresisLoopPeriodsEx](https://user-images.githubusercontent.com/98965657/152451283-ae753ae0-8d63-4d2d-bb54-a3a9c66256d5.jpg)
 
 
-Figure 2 plots the average hysteresis loop from each combination after centering. Clearly, some loops are cleaner than others at the edges near saturation: 
+Figure 2 plots the average hysteresis loop from each water-nanoparticle sample combination after centering. Clearly, some loops are cleaner than others at the edges near saturation: 
 
 ![AvgHysteresisLoopsEx](https://user-images.githubusercontent.com/98965657/152451197-e2467b0b-f904-4f7d-b3bd-c300f8080543.jpg)
 
