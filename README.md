@@ -1,7 +1,7 @@
 # CodeExamples/DBS for TRD
-Contains code from some of my work in Dr. Sameer Sheth's Lab. The aim is to decode mood state from neural activity (stereo-EEG signals) in treatment-resistant depression patients, eventually for closed-loop neurostimulation. The code performs dimensionality reduction on high-dimensional neural data then regresses mood state onto neural activity. It selects multiple candidate models distinguished by region of neural activity and number of principal components retained. It uses leave-one-out cross-validation to evaluate the model on sparse mood state measurements, and a nested leave-one-out cross-validation stage to select the candidate model for each stage.
+Contains code from some of my work in Dr. Sameer Sheth's Lab. The aim is to decode mood state from neural activity (stereo-EEG signals) in treatment-resistant depression patients, eventually for closed-loop neurostimulation. The code performs dimensionality reduction on high-dimensional neural data then regresses mood state onto neural activity. It selects one model after fitting multiple candidate models which vary by region of neural activity and number of principal components retained. It uses leave-one-out cross-validation to evaluate the model due to the sparsity of mood state measurements, and a nested leave-one-out cross-validation stage to select the candidate model for each outer fold.
 
-The script to be run is "MoodDecoding.m" This script will output four figures.
+The script to run is "MoodDecoding.m". (It relies on my functions "modelAndPredict.m" and "evaluateCandidateModels.m".) "MoodDecoding.m" will output four figures. 
 Figure 1 plots the prediction of mood state against true mood state using neural activity from one selected brain region (each test prediction datapoint corresponds to one fold of cross-validation): 
 
 ![001_1Region_ResultScatter](https://user-images.githubusercontent.com/98965657/152456252-d8cbf7ca-9f22-45e5-8493-b74465c7510a.jpg)
