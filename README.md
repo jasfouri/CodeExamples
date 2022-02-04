@@ -21,7 +21,7 @@ Figure 4 plots the magnitude of the regression coefficients for the power featur
 The script can be modified to run on another dataset by changing the patient number on line 2 (options are "001" or "002").
 
 # CodeExamples/AC Magnetometer
-Contains code and data I collected from some of my work in Dr. Jacob Robinson's Lab. The code processes magnetic nanoparticle magnetization data (in the presence of an alternating magnetic field) to characterize the hysteresis loops of the nanoparticles. The file "HysteresisLoops.m" is the code and the folder "CodeExamples/AC Magnetometer/55kHz" contains the data. 
+Contains code and data I collected from some of my work in Dr. Jacob Robinson's Lab. I built an alternating magnetic field generator and printed circuit board with a pickup coil to collect magnetization data from magnetic nanoparticles. The code processes these data to capture the hysteresis loops of the nanoparticles. The file "HysteresisLoops.m" is the code and the folder "CodeExamples/AC Magnetometer/55kHz" contains the data. 
 
 To collect a clean hysteresis loop from nanoparticles, I had to take two recordings of a nanoparticle sample and three recordings of a water sample (a control for further denoising the magnetization signal), then process all six combinations from these trials before selecting the cleanest hysteresis loop. "HysteresisLoops.m" yields three figures as output: 
 Figure 1 plots the hysteresis loops colored by period of the magnetic field for each of the six combinations: 
